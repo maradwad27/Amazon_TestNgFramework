@@ -47,7 +47,7 @@ public class HomePageTest extends BaseTest {
 	public void initalizeElement() {
 		PageFactory.initElements(driver, this);
 	}
-
+//Verify page Title
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void VerifyTitlePage() throws InterruptedException {
 		driver.navigate().to("https://www.amazon.in/");
