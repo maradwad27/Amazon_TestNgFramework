@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Default suite]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)(failed)(failed)">
+    <classes>
+      <class name="AmazonPageTest.HomePageTest">
+        <methods>
+          <include name="initializer"/>
+          <include name="readLocator"/>
+          <include name="initalizeElement"/>
+          <include name="navigateToSignUpPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- AmazonPageTest.HomePageTest -->
+      <class name="AmazonPageTest.SignUpPageTest">
+        <methods>
+          <include name="initializer"/>
+          <include name="waitToElementLoad"/>
+          <include name="LoginToWebsite"/>
+          <include name="initalizeElement"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- AmazonPageTest.SignUpPageTest -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->

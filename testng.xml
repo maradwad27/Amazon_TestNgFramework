@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite1" parallel="false">
+	<listeners>
+		<listener class-name="AmazonPageTest.TestNGListener"></listener>
+	</listeners>
+	<test name="AmazonPageTest">
+		<classes>
+			<class name="AmazonPageTest.HomePageTest" />
+			<class name="AmazonPageTest.SignUppageTest" />
+		</classes>
+	</test>
+</suite>
