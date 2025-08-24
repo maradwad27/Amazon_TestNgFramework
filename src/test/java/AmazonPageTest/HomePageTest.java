@@ -57,9 +57,9 @@ public class HomePageTest extends BaseTest {
 		Assert.assertEquals("Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in", title);
 				 
 	}
+	//Navigate to sign up page
 
 	@Test(groups = "SignIn")
-
 	public void navigateToSignUpPage() {
 		Actions actions = new Actions(driver);
 		WebElement btnAccountList = driver.findElement(ExcelReader.rowOutput(1));
