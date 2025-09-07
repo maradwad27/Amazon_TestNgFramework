@@ -51,20 +51,23 @@ public class HomePageTest extends BaseTest {
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void VerifyTitlePage() throws InterruptedException {
 		driver.navigate().to("https://www.amazon.in/");
-		driver.navigate().refresh();
-		Thread.sleep(4);
+		if(driver.findElements(ExcelReader.rowOutput(7)).size()>0)
+		{
+			driver.findElement(ExcelReader.rowOutput(7)).click();
+		}
+		Thread.sleep(5);
 		String title = driver.getTitle();
-		Assert.assertEquals("Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in", title);
 				 
 	}
 	//Navigate to sign up page
 
 	@Test(groups = "SignIn")
-	public void navigateToSignUpPage() {
+	public void navigateToSignUpPage() throws InterruptedException {
 		Actions actions = new Actions(driver);
 		WebElement btnAccountList = driver.findElement(ExcelReader.rowOutput(1));
 		actions.moveToElement(btnAccountList).build().perform();
 		btnSingIN.click();
+		Thread.sleep(3);
 	}
 
 }

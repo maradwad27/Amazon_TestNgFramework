@@ -1,5 +1,4 @@
 package AmazonPageTest;
-
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -8,8 +7,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.ForkJoinPool.ManagedBlocker;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
+import org.openqa.selenium.By; 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -21,13 +19,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-
+import org.testng.annotations.Test; 
 import utility.ExcelReader;
 @Listeners(AmazonPageTest.TestNGListener.class)
 public class SignUpPageTest extends BaseTest{
 	WebDriverWait wait;
-	Actions action;
+	Actions action; 
 	@FindBy(id="ap_email_login")
 	WebElement txtEmail;
 	

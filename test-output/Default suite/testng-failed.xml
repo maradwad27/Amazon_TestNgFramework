@@ -9,19 +9,9 @@
           <include name="readLocator"/>
           <include name="VerifyTitlePage"/>
           <include name="initalizeElement"/>
-          <include name="navigateToSignUpPage"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- AmazonPageTest.HomePageTest -->
-      <class name="AmazonPageTest.SignUpPageTest">
-        <methods>
-          <include name="initializer"/>
-          <include name="waitToElementLoad"/>
-          <include name="LoginToWebsite"/>
-          <include name="initalizeElement"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- AmazonPageTest.SignUpPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
